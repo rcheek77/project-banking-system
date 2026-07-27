@@ -1,22 +1,13 @@
 // Selected DOM Elements
-const dashboard = document.getElementById('dashboard'),
-    deposit = document.getElementById('deposit'),
-    withdraw = document.getElementById('withdraw'),
-    balance = document.getElementById('balance'),
-    depositInput = document.getElementById('deposit-input'),
-    withdrawInput = document.getElementById('withdraw-input'),
-    depositBtn = document.getElementById('deposit-btn'),
-    withdrawBtn = document.getElementById('withdraw-btn'),
-    submitBtn = document.getElementById('submit-btn'); // Will be null if using Option B
+const dashboard = document.getElementById('dashboard');
+const deposit = document.getElementById('deposit');
+const withdraw = document.getElementById('withdraw');
+const balance = document.getElementById('balance');
+const depositInput = document.getElementById('deposit-input');
+const withdrawInput = document.getElementById('withdraw-input');
+const depositBtn = document.getElementById('deposit-btn'); // Only declare this once!
+const withdrawBtn = document.getElementById('withdraw-btn');
 
-// Safely handle submit button only if it actually exists in the HTML
-if (submitBtn) {
-    submitBtn.addEventListener('click', () => {
-        const loginSection = document.getElementById('login-section');
-        if (loginSection) loginSection.classList.add('d-none');
-        dashboard.classList.remove('d-none');
-    });
-}
 
 // Deposit Event Handler
 depositBtn.addEventListener('click', () => {
