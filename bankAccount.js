@@ -5,7 +5,7 @@ const withdraw = document.getElementById('withdraw');
 const balance = document.getElementById('balance');
 const depositInput = document.getElementById('deposit-input');
 const withdrawInput = document.getElementById('withdraw-input');
-const depositBtn = document.getElementById('deposit-btn'); // Only declare this once!
+const depositBtn = document.getElementById('deposit-btn');
 const withdrawBtn = document.getElementById('withdraw-btn');
 
 
